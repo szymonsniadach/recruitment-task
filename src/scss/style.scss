@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixin';
+
 .uk-container-large {
     max-width: 1500px;
 }
@@ -77,8 +78,8 @@ header {
         width: 150px;
         left: 50%;
         margin-left: -80px;
-        padding: 10px 5px 10px 5px;
         margin-top: 0px;
+        padding: 10px 5px 10px 5px;
         text-align: center;
         z-index: 1;
         span {
@@ -90,10 +91,10 @@ header {
         }
     }
     .uk-overlay-primary {
-        background: rgba(31, 5, 72, 0.8);
+        background: rgba(57, 10, 99, 0.8);
     }
     .information {
-        @include information(absolute, 180px, 35%, #FFF);
+        @include information(absolute, 150px, 35%, #FFF);
         ul {
             li {
                 list-style-type: none;
@@ -304,16 +305,10 @@ header {
                 background-color: $green;
             }
             &:after {
-                content: '';
-                display: block;
-                position: absolute;
+                @include triangle(20px, 20px, $green);
+                @include transform-rotate(45deg);
                 bottom: -10px;
                 right: 50px;
-                width: 20px;
-                height: 20px;
-                background: $green;
-                -moz-transform: rotate(45deg);
-                -webkit-transform: rotate(45deg);
             }
         }
         *>:first-child {
@@ -353,16 +348,11 @@ header {
         .uk-subnav-pill {
             >.uk-active {
                 &:after {
-                    content: '';
-                    display: block;
-                    position: absolute;
+                    @include triangle(20px, 20px, $green);
+                    @include transform-rotate(-45deg);
                     bottom: 20px;
                     right: -7px;
-                    width: 20px;
-                    height: 20px;
-                    background: $green;
-                    -moz-transform: rotate(-45deg);
-                    -webkit-transform: rotate(-45deg);
+                    
                 }
             }
         }
@@ -386,10 +376,7 @@ header {
 #section-2 {
     position: relative;
     .information {
-        @include information(absolute,
-        120px,
-        35%,
-        #FFF);
+        @include information(absolute, 120px, 35%, #FFF);
     }
 }
 
@@ -419,17 +406,13 @@ header {
 
 @media (max-width: 1199px) {
     #section-2 {
-        @include margin-left-right(80px,
-        80px);
+        @include margin-left-right(80px, 80px);
         .uk-container {
             padding-left: 0px;
             padding-right: 0px;
         }
         .information {
-            @include information(relative,
-            0px,
-            100%,
-            #FFF);
+            @include information(relative, 0px, 100%, #FFF);
             background-color: $brighter-purple;
         }
     }
@@ -437,8 +420,7 @@ header {
 
 @media (max-width: 500px) {
     #section-2 {
-        @include margin-left-right(20px,
-        20px);
+        @include margin-left-right(20px, 20px);
         .uk-container {
             padding-left: 0px;
             padding-right: 0px;
@@ -468,9 +450,7 @@ header {
         position: static;
         margin-left: 0px;
         margin-top: 50px;
-        transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
+        @include transform-rotate(180deg);
     }
     .uk-navbar-container:not(.uk-navbar-transparent) {
         background-color: transparent;
@@ -480,7 +460,7 @@ header {
     }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 959px) {
     #section-3 {
         #steps {
             .uk-text-center {
