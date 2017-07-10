@@ -108,6 +108,7 @@ header {
         top: 130px;
         background-color: $purple;
         width: 300px;
+        z-index: 2;
         .uk-form-label {
             color: #FFF;
         }
