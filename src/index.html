@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>zadanie rekrutacyjne - Szymon Śniadach</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="uk-container uk-container-large">
+            <div id="logo">
+                <img src="images/logo.png">
+                <span>LOREM IPSUM</span>
+            </div>
+            <div id="green-box" class="uk-align-center">
+                <span>
+					<b>LOREM IPSUM</b><br>
+						IPSUM IPSUM <br>
+				</span>
+                <span>2016</span>
+            </div>
+        </div>
+        <div class="uk-inline">
+            <div class="uk-overlay uk-overlay-primary uk-position-left"></div>
+            <img src="images/bg-header.png" width="100%" alt="">
+            <div class="uk-flex uk-flex-center">
+                <a href="#section-1" uk-scroll>
+                    <div class="arrow">
+                        <span uk-icon="icon: arrow-down; ratio: 2"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="uk-container uk-container-large">
+                <div uk-grid>
+                    <div class="uk-width-1-2@s uk-flex uk-flex-left">
+                        <div class="information" uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 300;">
+                            <div class="uk-padding">
+                                <h2 class="font-bold">Lorem ipsum dolor sit <br>
+									<span class="color-green">consectetur adipiscing</span></h2>
+                                <ul>
+                                    <li><span uk-icon="icon: check"></span><span class="color-green">0 zł</span> lorem ipsum lorem ipsum</li>
+                                    <li><span uk-icon="icon: check"></span><span class="color-green">0 zł</span> lorem ipsum lorem ipsum</li>
+                                    <li><span uk-icon="icon: check"></span><span class="color-green">0 zł</span> lorem ipsum lorem ipsum</li>
+                                    <li><span uk-icon="icon: check"></span><span class="color-green">0 zł</span> lorem ipsum lorem ipsum</li>
+                                </ul>
+                                <h3 class="font-bold"><span class="color-green">1500 zł</span> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@s uk-flex uk-flex-right">
+
+                        <form class="uk-form-horizontal uk-margin-large" uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay: 300;">
+                            <div class="uk-padding">
+                                <h3>Wypełnij formularz<br>
+									<span>Oddzwonimy do Ciebie!</span>
+								</h3>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-text">Imię:</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-horizontal-text" type="text" name="name">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-text">Nazwisko:</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-horizontal-text" type="text" name="surname">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-text">Nr telefonu:</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-horizontal-text" type="number" name="phone">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-text">NIP:</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-horizontal-text" type="number" name="nip">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <input class="uk-checkbox" type="checkbox"> <span id="klauzula" uk-toggle="target: #toggle">Wyrażam zgodę na przetwarzanie moich danych osobowych...</span>
+                                    <span id="toggle" aria-hidden="true" hidden="hidden"> dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).</span>
+                                </div>
+                                <input id="form-button" type="submit" value="Wyślij">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div id="section-1" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 500;">
+        <div class="uk-container uk-container-large">
+            <div class="padding-section">
+                <div class="centered">
+                    <h2>LOREM IPSUM DOLOR SIT AMET</h2>
+                    <h4 class="uk-text-center">Sprawdź jak łatwo otrzymać premię!</h4>
+                    <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" uk-switcher="animation: uk-animation-fade">
+                        <li class="dark-purple">
+                            <a href="#">premia<br>
+					    		<span>+60zł</span>
+					    	</a>
+                        </li>
+                        <li class="brighter-purple">
+                            <a href="#">premia<br>
+					    		<span>+30 zł</span>
+					    	</a>
+                        </li>
+                        <li class="dark-purple">
+                            <a href="#">premia<br>
+								<span>+25 zł</span>
+					    	</a>
+                        </li>
+                        <li class="brighter-purple">
+                            <a href="#">prermia<br>
+								<span>+15 zł</span>
+					    	</a>
+                        </li>
+                        <li class="dark-purple">
+                            <a href="#">premia<br>
+								<span>+10 zł</span>
+					    	</a>
+                        </li>
+                        <li class="brighter-purple">
+                            <a href="#">premia<br>
+								<span>+5 zł</span>
+					    	</a>
+                        </li>
+                    </ul>
+
+                    <ul id="bonus-list" class="uk-switcher uk-margin">
+                        <li>
+                            <ul>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                                <li><span>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#promotion-rules" class="uk-align-right" style="margin-top: 50px;" uk-toggle>Regulamin promocji</a>
+                <div id="promotion-rules" uk-modal>
+                    <div class="uk-modal-dialog">
+
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Headline</h2>
+                        </div>
+
+                        <div class="uk-modal-body" uk-overflow-auto>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        </div>
+
+                        <div class="uk-modal-footer uk-text-right">
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-2">
+        <div class="uk-inline">
+            <img src="images/section-2.png" width="100%" alt="">
+            <div class="uk-overlay uk-overlay-primary uk-position-left"></div>
+            <div class="uk-container uk-container-large">
+                <div class="information" uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 300;">
+                    <div class="uk-padding margin-left-right">
+                        <h2 class="font-bold"><span class="color-green">Lorem ipsum dolor sit</span><br>
+							consectetur adipiscing</h2>
+                        <ul>
+                            <li>lorem ipsum lorem ipsum</li>
+                            <li>lorem ipsum lorem ipsum</li>
+                            <li>lorem ipsum lorem ipsum</li>
+                            <li>lorem ipsum lorem ipsum</li>
+                        </ul>
+                        <h3 class="color-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-3">
+        <div class="uk-container uk-container-large">
+            <div class="padding-section">
+            
+                <h2 class="uk-text-center">LOREM IPSUM DOLOR SIT AMET</h2>
+                <div id="steps" class="uk-grid" uk-grid>
+                    <div class="uk-width-1-3@m uk-width-1-3@s uk-text-center" uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay: 300;">
+                        <div class="uk-align-center">
+                            <img src="images/wypelnij-formularz.png" alt="">
+                        </div>
+                        <p class="step"><b>Wypełnij formularz </b>- oddzwonimy w celu potwierdzenia danych</p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-width-1-3@s uk-text-center" uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay: 600;">
+                        <div class="uk-align-center">
+                            <img src="images/podpisz-umowe.png" alt="">
+                        </div>
+                        <p class="step"><b>Podpisz umowę </b>- kurier dostarczy niezbędne dokumenty</p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-width-1-3@s uk-text-center" uk-scrollspy="cls: uk-animation-slide-top; repeat: true; delay: 900;">
+                        <div class="uk-align-center">
+                            <img src="images/zacznij-korzystac.png" alt="">
+                        </div>
+                        <p class="step"><b>Zacznij korzystać z rachunki </b>- i odbierz 1500zł premii</p>
+                    </div>
+                </div>
+
+                <div class="uk-flex uk-flex-center">
+                    <a href="#header" uk-scroll>
+                        <div class="arrow">
+                            <span uk-icon="icon: arrow-down; ratio: 2"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <nav class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                        <li><a href="#">Dolor</a></li>
+                        <li><a href="#">Sit</a></li>
+                        <li><a href="#">Amet</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
