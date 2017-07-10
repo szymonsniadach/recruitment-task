@@ -1,0 +1,100 @@
+
+/* -=-=-=-=-=- SECTION 1 -=-=-=-=-=- */
+
+#section-1 {
+    background: url("../images/section.png") no-repeat top center;
+    background-size: cover;
+    h2 {
+        font-weight: bold;
+        text-align: center;
+    }
+    .uk-subnav {
+        margin-left: 0px;
+        margin-bottom: 60px;
+        margin-top: 50px;
+        li {
+            text-align: center;
+            padding-left: 0px;
+            span {
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+    }
+    .uk-subnav-pill {
+        a {
+            color: #FFF;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        >.uk-active {
+            position: relative;
+            >a {
+                background-color: $green;
+            }
+            &:after {
+                @include triangle(20px, 20px, $green);
+                @include transform-rotate(45deg);
+                bottom: -10px;
+                right: 50px;
+            }
+        }
+        *>:first-child {
+            padding: 20px 40px 20px 40px;
+        }
+    }
+    #bonus-list {
+        width: 50%;
+        display: table;
+        margin: 0 auto;
+        ul {
+            list-style-type: square;
+            li {
+                color: $green;
+                margin-bottom: 20px;
+                span {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1145px) {
+    #section-1 {
+        .uk-container {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .uk-subnav {
+            display: block;
+            float: left;
+        }
+        #bonus-list {
+            padding-top: 100px;
+        }
+        .uk-subnav-pill {
+            >.uk-active {
+                &:after {
+                    @include triangle(20px, 20px, $green);
+                    @include transform-rotate(-45deg);
+                    bottom: 20px;
+                    right: -7px;
+                    
+                }
+            }
+        }
+        .centered {
+            display: inline;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #section-1 {
+        .padding-section {
+            padding: 40px 10px 40px 10px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+
+/* -=-=-=-=-=- SECTION 3 -=-=-=-=-=- */
+
+#section-3 {
+    background: url("../images/section.png") no-repeat top center;
+    background-size: cover;
+    #steps {
+        .uk-align-center {
+            margin-bottom: 0px;
+        }
+    }
+    .step {
+        width: 70%;
+        display: inline-block;
+    }
+    h2 {
+        margin-bottom: 80px;
+    }
+    .arrow {
+        position: static;
+        margin-left: 0px;
+        margin-top: 50px;
+        @include transform-rotate(180deg);
+    }
+    .uk-navbar-container:not(.uk-navbar-transparent) {
+        background-color: transparent;
+    }
+    .uk-navbar-nav > li.uk-active > a {
+        color: $green;
+    }
+    .uk-navbar-nav>li>a {
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 959px) {
+    #section-3 {
+        #steps {
+            .uk-text-center {
+                margin-bottom: 50px;
+            }
+        }
+        .uk-navbar-nav {
+            display: block;
+            li {
+                a {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

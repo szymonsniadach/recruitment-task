@@ -1,0 +1,212 @@
+header {
+    position: relative;
+    #logo {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        span {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        img {
+            margin-right: 50px;
+        }
+    }
+    #green-box {
+        position: absolute;
+        top: 0;
+        background-color: $green;
+        width: 150px;
+        left: 50%;
+        margin-left: -80px;
+        margin-top: 0px;
+        padding: 10px 5px 10px 5px;
+        text-align: center;
+        z-index: 1;
+        span {
+            color: #000;
+        }
+        span:nth-child(2) {
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+    .uk-overlay-primary {
+        background: rgba(57, 10, 99, 0.8);
+    }
+    .information {
+        @include information(absolute, 150px, 35%, #FFF);
+        ul {
+            li {
+                list-style-type: none;
+                span:nth-child(1) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    form {
+        position: absolute;
+        top: 130px;
+        background-color: $purple;
+        width: 300px;
+        z-index: 2;
+        .uk-form-label {
+            color: #FFF;
+        }
+        .input-right {
+            text-align: right;
+        }
+        #klauzula {
+            text-decoration: underline;
+            cursor: pointer;
+            color: #FFF;
+        }
+        #toggle {
+            color: #FFF;
+        }
+        .uk-checkbox {
+            background-color: #FFF;
+        }
+        .uk-align-right {
+            margin-bottom: 0px;
+        }
+        h3 {
+            color: #FFF;
+            span {
+                font-size: 16px;
+            }
+        }
+        #form-button {
+            border: none;
+            background-color: $green;
+            font-weight: bold;
+            color: #FFF;
+            width: 100%;
+            line-height: 50px;
+        }
+    }
+}
+
+@media (min-width: 1390px) {
+    header {
+        .information {
+            h2 {
+                font-size: 2.5rem;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+            ul {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1570px) {
+    header {
+        .information {
+            top: 100px;
+        }
+        form {
+            top: 45px;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1349px) {
+    header {
+        .information {
+            top: 100px;
+        }
+        form {
+            top: 0px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .uk-overlay-primary {
+        background: none;
+    }
+    .uk-grid > .uk-grid-margin {
+        margin-top: 0px;
+    }
+    header {
+        .uk-overlay-primary {
+            background: none;
+        }
+        #logo {
+            position: relative;
+            top: 0px;
+            padding: 15px;
+            background-color: $navy-blue;
+        }
+        #green-box {
+            top: 150px;
+            left: 130px;
+            margin-left: 0px;
+        }
+        form {
+            position: relative;
+            top: 0px;
+            width: 100%;
+        }
+        .uk-grid {
+            margin-left: 0px;
+            >* {
+                padding-left: 0px;
+            }
+        }
+        .uk-container {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .information {
+            @include information(relative, 0px, 100%, #FFF);
+            background-color: $navy-blue;
+        }
+        .arrow {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    header {
+        .uk-form-horizontal .uk-form-controls {
+            margin-left: 100px !important;
+        }
+        .uk-form-horizontal .uk-form-label {
+            width: 80px !important;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        #green-box {
+            top: 100px;
+            left: 80px;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    header {
+        #green-box {
+            top: 100px;
+            left: 30px;
+        }
+        #logo {
+            span {
+                font-size: 20px;
+            }
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+}
