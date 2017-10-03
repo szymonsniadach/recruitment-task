@@ -1,1 +1,6 @@
-Wykorzystane technologie: HTML5, CSS3, framework UIkit, Gulp, SASS
+Technologies:
+- HTML
+- CSS
+- framework UIkit
+- Gulp
+- SASS
