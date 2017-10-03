@@ -1,3 +1,5 @@
+# recruitment task to Infinity Group
+
 Technologies:
 - HTML
 - CSS
